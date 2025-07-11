@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+}
+:root {
+   --navbar-hover-color: #534FEB;
+   --sidebar-color:#F5F5F5;
+   --border-radius-nav: 20px;
+   --main-layout-h2: 15px ;
+}
