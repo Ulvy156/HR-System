@@ -20,6 +20,12 @@ export function toggleClassName(id: string, className: string = 'active') {
   ele?.classList.add(className);
 }
 
-
+export function currentActiveUrl(url: string, id: string, className: string = 'active'){
+  const currentUrl = window.location.pathname;
+  const isMatchedUrl = currentUrl.includes(url);
+  if(isMatchedUrl){
+    addClassName(id, className)
+  }
+}
 //element inside each func due to we want it to get fresh element
 //every time DOM update

@@ -23,11 +23,13 @@
     <!-- Main Content (fills remaining) -->
     <section class="flex-1 overflow-y-auto">
       <header
-        class="w-full flex justify-between items-center h-fit p-5  sticky z-[999] top-0 bg-white"
+        class="w-full flex justify-between items-center h-fit px-5 py-3  sticky z-[999] top-0 bg-white"
       >
         <slot name="header"></slot>
       </header>
-      <slot name="main" >main</slot>
+      <main class="ml-5 w-[97%]">
+        <slot name="main" >main</slot>
+      </main>
     </section>
   </section>
 </template>

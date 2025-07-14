@@ -66,17 +66,22 @@
     </template>
     <!-- main content -->
      <template #main>
-       <main >
-        hi
-       </main>
+       <section>
+        <div class="flex flex-wrap  gap-5">
+          <CommonCard class="flex-1" v-for="i in 4" :key="i"/>
+        </div>
+        <CommonTable/>
+       </section>
      </template>
   </MainLayout>
 </template>
 
 <script setup lang="ts">
 //vue
-import { defineAsyncComponent, markRaw, ref } from 'vue'
-
+import { defineAsyncComponent, markRaw, onMounted, ref } from 'vue'
+import { useRouter } from 'vue-router'
+import CommonCard from '@/components/common/CommonCard.vue'
+import CommonTable from '@/components/common/CommonTable.vue'
 //layout
 import MainLayout from '@/layouts/MainLayout.vue'
 //base
@@ -108,10 +113,10 @@ import {
   IconDollar
 } from '@/components/icons'
 
-
 // properties
 const previousID = ref<string>('')
 const previousIdLi = ref<string>('')
+const router = useRouter()
 //functions
 function getPreviousActive(id: string) {
   autoCloseCollapse(id)
@@ -243,6 +248,13 @@ const options = [
     icon: renderIcon(IconSingleUser)
   },
 ]
+
+onMounted(()=>{
+  console.log(router.currentRoute.value.fullPath);
+  console.log(window.location.pathname);
+
+
+})
 </script>
 
 <style scoped>
