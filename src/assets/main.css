@@ -5,6 +5,7 @@
 body {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
+  scroll-behavior: smooth;
 }
 :root {
    --navbar-hover-color: #534FEB;
