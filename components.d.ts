@@ -18,6 +18,7 @@ declare module 'vue' {
     CommonCollapse: typeof import('./src/components/common/CommonCollapse.vue')['default']
     CommonModal: typeof import('./src/components/common/CommonModal.vue')['default']
     CommonTable: typeof import('./src/components/common/CommonTable.vue')['default']
+    DashBoard: typeof import('./src/components/features/HR/DashBoard.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     HRHeader: typeof import('./src/components/features/HR/Navbar/HR-Header.vue')['default']
     HRLayout: typeof import('./src/components/features/HR/HR-Layout.vue')['default']
