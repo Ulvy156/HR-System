@@ -11,21 +11,24 @@
 </template>
 
 <script setup lang="ts">
+import type { InputStatus } from '@/types/InputType';
 
+//types props
+type InputType = {
+  value: string;
+  type: string;
+  placeholder: string;
+  status: InputStatus;
+  disabled: boolean;
+  readonly: boolean;
+}
 //emits
 const emit = defineEmits(['update:modelValue'])
 //:modelValue (prop)
 //@update:modelValue (event)
 
 //props
-withDefaults(defineProps<{
-  value?: string;
-  type?: string;
-  placeholder?: string;
-  status?: 'default' | 'success' | 'warning' | 'error';
-  disabled?: boolean;
-  readonly?: boolean;
-}>(), {
+withDefaults(defineProps<Partial<InputType>>(), {
   value: '',
   type: 'text',
   placeholder: 'Enter text here...',
