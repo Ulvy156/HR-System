@@ -1,12 +1,12 @@
 export default [
   {
-    path: '/hr',
+    path: '/leave',
     component: () => import('@/components/features/HR/HR-Layout.vue'),
     meta: { requiresAuth: true, allowedRoles: ['hr', 'admin'] },
     children: [
       {
-        path: 'employees',
-        name: 'HREmployeeList',
+        path: '/',
+        name: '/',
         component: () => import('@/components/features/HR/HR-Layout.vue'),
         meta: { requiresAuth: true, allowedRoles: ['hr'] },
       },

@@ -45,6 +45,8 @@
 //base
 import BaseTag from '@/components/base/BaseTag.vue'
 import { readonly } from 'vue';
+//component
+import CommonCard from '@/components/common/CommonCard.vue';
 
 const dataTable = readonly([
   {

@@ -9,6 +9,8 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AdminLayout: typeof import('./src/components/features/Admin/Admin-Layout.vue')['default']
+    AuthLayout: typeof import('./src/components/Auth/Auth-Layout.vue')['default']
+    AuthPage: typeof import('./src/components/Auth/Auth-Page.vue')['default']
     BaseBadge: typeof import('./src/components/base/BaseBadge.vue')['default']
     BaseBreadcrumb: typeof import('./src/components/base/BaseBreadcrumb.vue')['default']
     BaseButton: typeof import('./src/components/base/BaseButton.vue')['default']
@@ -19,7 +21,9 @@ declare module 'vue' {
     CommonModal: typeof import('./src/components/common/CommonModal.vue')['default']
     CommonTable: typeof import('./src/components/common/CommonTable.vue')['default']
     DashBoard: typeof import('./src/components/features/HR/DashBoard.vue')['default']
+    EmployeeLayout: typeof import('./src/components/features/Employee/Employee-Layout.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    HRDashBoard: typeof import('./src/components/features/HR/HR-DashBoard.vue')['default']
     HRHeader: typeof import('./src/components/features/HR/Navbar/HR-Header.vue')['default']
     HRLayout: typeof import('./src/components/features/HR/HR-Layout.vue')['default']
     HRSidebar: typeof import('./src/components/features/HR/Navbar/HR-Sidebar.vue')['default']
@@ -53,10 +57,13 @@ declare module 'vue' {
     NDropdownItem: typeof import('naive-ui')['NDropdownItem']
     NDropdownOption: typeof import('naive-ui')['NDropdownOption']
     NIcon: typeof import('naive-ui')['NIcon']
+    NInput: typeof import('naive-ui')['NInput']
     NTag: typeof import('naive-ui')['NTag']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    StaffLayout: typeof import('./src/components/features/Staffs/Staff-Layout.vue')['default']
+    SignIn: typeof import('./src/components/Auth/Sign-In.vue')['default']
+    SignUp: typeof import('./src/components/Auth/Sign-Up.vue')['default']
+    StaffLayout: typeof import('./src/components/features/Employee/Staff-Layout.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }

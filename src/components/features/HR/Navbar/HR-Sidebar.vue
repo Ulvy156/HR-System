@@ -32,10 +32,9 @@
 
 <script setup lang="ts">
 //vue
-import { defineAsyncComponent, markRaw, readonly, ref } from 'vue'
+import { defineAsyncComponent, markRaw, ref } from 'vue'
 //utils
 import { addClassName, removeClassName, toggleClassName } from '@/utils/useActiveClass'
-import { renderIcon } from '@/utils/useRenderIcon'
 // Icons
 const IconClipboard = markRaw(
   defineAsyncComponent(() => import('@/components/icons/IconClipboard.vue')),

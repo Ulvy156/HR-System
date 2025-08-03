@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 // component
-import DashBoard from './DashBoard.vue'
+import DashBoard from './HR-DashBoard.vue'
 import HRSidebar from './Navbar/HR-Sidebar.vue'
 import HRHeader from './Navbar/HR-Header.vue'
 
